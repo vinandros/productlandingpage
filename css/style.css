@@ -14,11 +14,10 @@ body{
     font-family: 'Merriweather', serif;
     font-size: 1rem;
     line-height: 1.4rem;
-    background-color: brown;
 }
 
 #header {
-    z-index: 1;
+    z-index: 2;
     display: flex;
     width: 100%;
     height: auto;
@@ -192,3 +191,76 @@ h1{
         width:100%;
     }
 }
+
+@media(max-width:700px){
+    #video {
+        height:500px;
+        width:100%;
+    }
+}
+
+#features {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    background-color: white;
+}
+
+.features {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 100px;
+}
+
+.features img {
+    width: 50%;
+    max-width: 100%;
+    max-height: auto;
+    border-radius: 15px;
+    margin-left: 15%;
+}
+
+.features figcaption {  
+    position: absolute;
+    width: 50%;
+    color: black;
+    background-color: rgb(238, 238, 238);
+    border-radius: 15px;
+    padding: 2rem;
+    z-index: 1;
+    right: 200px;
+    top: 30px;
+    max-width: 400px;
+}
+
+.feature-description {
+    line-height: 2rem;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+
+@media(max-width:700px){
+    .features {
+        justify-content: center;
+    }
+
+    #features {
+        width: 100%;
+    }
+
+    .features img {
+        display: none;
+    }
+
+    .features figcaption {  
+        position: static;
+        width: 95%;
+    }
+
+    
+}
+
