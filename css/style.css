@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap');
 
-:root {
-    
-}
 
 * {
     margin: 0;
@@ -322,3 +319,71 @@ h1{
     transition: background-color 1s;
 }
 
+#subscripe {
+    text-align: center;
+    padding: 6rem;
+    margin-top: 50px;
+    height: 200px;
+}
+
+#form {
+    margin: auto;
+}
+
+#form input[type="submit"]{
+    height: 3rem;
+    width: 7rem;
+}
+
+#form input[type="email"]{
+    height: 3rem;
+    width: 30rem;
+    margin-right: 1rem; 
+}
+
+#form input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: rgb(107, 107, 107);
+    transition: background-color 1s;
+    border: none;
+}
+
+@media(max-width:700px){
+    #form input[type="email"]{
+        height: 3rem;
+        width: 15rem;
+        margin-right: 0rem; 
+    }
+
+    #subscripe {
+        text-align: center;
+        padding: 1rem;
+    }
+}
+
+footer {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(224, 224, 224);
+    margin-top: 100px;
+}
+
+footer ul{
+    display: flex;
+    margin-left: 20px;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+}
+
+footer span{
+    margin-right: 20px;
+}
